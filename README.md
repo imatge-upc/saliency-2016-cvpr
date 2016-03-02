@@ -22,7 +22,7 @@
 [NoelOConnor-photo]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/authors/NoelOConnor.jpg "Noel O'Connor"
 [XavierGiro-photo]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
 
-A joint collaboration of:
+A joint collaboration between:
 
 | ![logo-insight] | ![logo-dcu] | ![logo-upc] | ![logo-etsetb] | ![logo-gpi] | 
 |:-:|:-:|:-:|:-:|:-:|
