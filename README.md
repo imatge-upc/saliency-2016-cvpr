@@ -41,7 +41,14 @@ A joint collaboration between:
 [logo-etsetb]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/etsetb.png "ETSETB TelecomBCN"
 [logo-gpi]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/gpi.png "UPC Image Processing Group"
 
-#### Models
+
+## Abstract
+
+The prediction of salient areas in images has been traditionally addressed with hand-crafted features based on neuroscience principles. This paper, however, addresses the problem with a completely data-driven approach by training a convolutional neural network (convnet). The learning process is formulated as a minimization of a loss function that measures the Euclidean distance of the predicted saliency map with the provided ground truth. The recent publication of large datasets of saliency prediction has provided enough data to train end-to-end architectures that are both fast and accurate. Two designs are proposed: a shallow convnet trained from scratch, and a another deeper solution whose first three layers are adapted from another network trained for classification.
+To the authors knowledge, these are the first end-to-end CNNs trained and tested for the purpose of saliency prediction
+
+
+## Models
 
 The two convnets presented in our work can be downloaded from the links provided below each respective figure:
 
@@ -61,12 +68,12 @@ The two convnets presented in our work can be downloaded from the links provided
 Our previous winning shallow models for the [LSUN Saliency Prediction Challenge 2015](http://lsun.cs.princeton.edu/#saliency) are described in [this preprint](https://imatge.upc.edu/web/publications/end-end-convolutional-network-saliency-prediction) and available from [this other site](https://imatge.upc.edu/web/resources/end-end-convolutional-networks-saliency-prediction-software). That work was also part of Junting Pan's bachelor thesis at [UPC TelecomBCN school](https://www.etsetb.upc.edu/en/) in June 2015, which report, slides and video are available [here](https://imatge.upc.edu/web/publications/visual-saliency-prediction-using-deep-learning-techniques).
 
 
-### Datasets
+## Datasets
 
-#### Training
+### Training
 As explained in our paper, our networks were trained on the training and validation data provided by [SALICON](http://salicon.net/).
 
-#### Test
+### Test
 Three different dataset were used for test:
 * Test partition of [SALICON](http://salicon.net/) dataset.
 * Test partition of [iSUN](http://vision.princeton.edu/projects/2014/iSUN/) dataset.
@@ -74,11 +81,11 @@ Three different dataset were used for test:
 
 A collection of links to the SALICON and iSUN datasets is available from the [LSUN Challenge site](http://lsun.cs.princeton.edu/#saliency).
 
-### Software frameworks
+## Software frameworks
 
 Our paper presents two different convolutional neural networks trained with different frameworks. For this reason, different instructions and source code folders are provided.
 
-#### Shallow Network on Lasagne
+### Shallow Network on Lasagne
 
 The shallow network is implemented in [Lasagne](https://github.com/Lasagne/Lasagne), which at its time is developed over [Theano](http://deeplearning.net/software/theano/).
 To install required version of Lasagne and all the remaining dependencies, you should run this [pip](https://pip.pypa.io/en/stable/) command.
@@ -89,11 +96,11 @@ pip install -r https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/shal
 
 This requirements file was provided by [Daniel Nouri](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/).
 
-#### Deep Network on Caffe
+### Deep Network on Caffe
 
 The deep network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
-### Acknowledgements
+## Acknowledgements
 
 We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
 
