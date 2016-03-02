@@ -33,7 +33,7 @@
 [XavierGiro-photo]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
 
 
-#### Trained convnets
+#### Models
 
 The two convnets presented in our work can be downloaded from the links provided below each respective figure:
 
