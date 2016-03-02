@@ -81,7 +81,7 @@ pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/req
 
 This requirements file was provided by [Daniel Nouri](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/).
 
-#### Deep Network 
+#### Deep Network
 
 The deep network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
@@ -97,8 +97,9 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [AlbertGil-photo]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/authors/AlbertGil.jpg "Albert Gil"
 [JosepPujal-photo]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/authors/JosepPujal.jpg "Josep Pujal"
 
-|   |   |
-|:-:|:-:|
-|  We gratefully acknowledge the support of NVIDIA Corporation with the donation of the GeoForce GTX Titan Z used in this work. |   |
-|  The Image ProcessingGroup at the UPC is a SGR14 Consolidated Research Group recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its  AGAUR office. |   |
-|  This work has been developed in the framework of the project BigGraph TEC2013-43935-R, funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  |   |
+|   |
+|:-:|
+|  We gratefully acknowledge the support of NVIDIA Corporation with the donation of the GeoForce GTX Titan Z and Titan X used in this work. |  
+|  The Image ProcessingGroup at the UPC is a SGR14 Consolidated Research Group recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its  AGAUR office. |  
+|  This work has been developed in the framework of the project BigGraph TEC2013-43935-R, funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  |  
+|  This publication has emanated from research conducted with the financial support of Science Foundation Ireland (SFI) under grant number SFI/12/RC/2289. |  
