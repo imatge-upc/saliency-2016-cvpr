@@ -33,6 +33,8 @@ Our paper presents two different convolutional neural networks trained with diff
 
 ### Shallow Network (alias JuntingNet)
 
+#### Software framework
+
 This network is implemented in [Lasagne](https://github.com/Lasagne/Lasagne), which at its time is developed over [Theano](http://deeplearning.net/software/theano/).
 To install required version of Lasagne and all the remaining dependencies, you should run this [pip](https://pip.pypa.io/en/stable/) command.
 
@@ -42,11 +44,24 @@ pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/req
 
 This requirements file was provided by [Daniel Nouri](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/).
 
-As explained in our paper, our shallow network was trained with two different datasets to generate the winning entries in the LSUN Saliency Prediction Challenge 2015:
-* [Shallow ConvNet trained with iSun data](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/models/JuntingNet_iSUN.pickle) - 819 MB
-* [Shallow ConvNet trained with SALICON data](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/models/JuntingNet_SALICON.pickle) - 2.5 GB 
+#### Trained convnets
 
+As explained in our paper, our shallow network was trained with two different datasets to generate the winning entries in the [LSUN Saliency Prediction Challenge 2015](http://lsun.cs.princeton.edu/#saliency):
+* [Shallow ConvNet](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/models/JuntingNet_iSUN.pickle) trained with [iSUN](http://vision.princeton.edu/projects/2014/iSUN/) training and validation data - 819 MB
+* [Shallow ConvNet](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/models/JuntingNet_SALICON.pickle) trained with [SALICON](http://salicon.net/) training and validation data - 2.5 GB 
+
+Links to these datasets are available from the [LSUN Challenge site](http://lsun.cs.princeton.edu/#saliency).
 
 ### Deep Network (alias SalNet)
 
+#### Software framework
+
 The deep network is developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
+
+#### Trained convnet
+
+The two files that define our deep convnet over Caffe are the following:
+
+
+
+This model was trained only with SALICON data.
