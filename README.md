@@ -67,6 +67,10 @@ The two convnets presented in our work can be downloaded from the links provided
 
 Our previous winning shallow models for the [LSUN Saliency Prediction Challenge 2015](http://lsun.cs.princeton.edu/#saliency) are described in [this preprint](https://imatge.upc.edu/web/publications/end-end-convolutional-network-saliency-prediction) and available from [this other site](https://imatge.upc.edu/web/resources/end-end-convolutional-networks-saliency-prediction-software). That work was also part of Junting Pan's bachelor thesis at [UPC TelecomBCN school](https://www.etsetb.upc.edu/en/) in June 2015, which report, slides and video are available [here](https://imatge.upc.edu/web/publications/visual-saliency-prediction-using-deep-learning-techniques).
 
+## Visual Results
+
+![Qualitative saliency predictions](https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/figs/qualitative.jpg)
+
 
 ## Datasets
 
