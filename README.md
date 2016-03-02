@@ -1,5 +1,9 @@
 # Shallow and Deep Convolutional Networks for Saliency Prediction
-## Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)](http://cvpr2016.thecvf.com/) 
+
+|  ![CVPR 2016 logo][cvpr-logo] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)](http://cvpr2016.thecvf.com/)   |
+|:-:|---|
+
+[cvpr-logo]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/cvpr2016.jpg "CVPR 2016 logo"
 
 
 | ![Junting Pan][JuntingPan-photo]  | ![Kevin McGuinness][KevinMcGuinness-photo]  | ![Elisa Sayrol][ElisaSayrol-photo]  | ![Noel O'Connor][NoelOConnor-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]  |
