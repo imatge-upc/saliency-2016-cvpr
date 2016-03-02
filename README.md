@@ -39,8 +39,11 @@ The two convnets presented in our work can be downloaded from the links provided
 
 | Shallow ConvNet (JuntingNet)  |  Deep ConvNet (SalNet) |
 |:-:|:-:|
-|  Figure | Figure  |
-| [Lasagne Model (2.5 GB)](shallow-model)  | [Caffe Model](deep-model) [Caffe Prototxt](deep-prototxt)  |
+|  ![shallow-fig] | ![deep-fig]  |
+| [[Lasagne Model (2.5 GB)]](shallow-model)  | [[Caffe Model (99 MB)]](deep-model) [[Caffe Prototxt]](deep-prototxt)  |
+
+[shallow-fig]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/figs/shallow.png "Shallow convnet architecture"
+[deep-fig]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/figs/deep.png "Deep convnet architecture"
 
 [shallow-model]: https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/shallow_net.pickle
 [deep-model]: https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_model.caffemodel
@@ -82,3 +85,12 @@ This requirements file was provided by [Daniel Nouri](http://danielnouri.org/not
 
 The deep network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
+### Acknowledgements
+
+We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
+
+|   |   |
+|:-:|:-:|
+|  We gratefully acknowledge the support of NVIDIA Corporation with the donation of the GeoForce GTX Titan Z used in this work. |   |
+|  The Image ProcessingGroup at the UPC is a SGR14 Consolidated Research Group recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its  AGAUR office. |   |
+|  This work has been developed in the framework of the project BigGraph TEC2013-43935-R, funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  |   |
