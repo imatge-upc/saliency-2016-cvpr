@@ -49,7 +49,9 @@ To the authors knowledge, these are the first end-to-end CNNs trained and tested
 
 ## Publication
 
-An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available. Please cite with the following Bibtex code:
+An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available. 
+
+Please cite with the following Bibtex code:
 
 ````
 @article{pan2016shallow,
