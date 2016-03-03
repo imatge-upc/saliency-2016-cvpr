@@ -132,3 +132,19 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [logo-catalonia]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/generalitat.jpg "Logo of Catalan government"
 [logo-spain]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/MEyC.png "Logo of Spanish government"
 [logo-ireland]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/sfi.png "Logo of Science Foundation Ireland"
+
+<!---
+Javascript code to enable Google Analytics
+-->
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7678045-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
