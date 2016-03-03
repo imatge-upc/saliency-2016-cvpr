@@ -49,7 +49,22 @@ To the authors knowledge, these are the first end-to-end CNNs trained and tested
 
 ## Publication
 
-A [pre-print version](https://imatge.upc.edu/web/publications/shallow-and-deep-convolutional-networks-saliency-prediction) is already available.
+An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available. Please cite with the following Bibtex code:
+
+````
+@article{pan2016shallow,
+  title={Shallow and Deep Convolutional Networks for Saliency Prediction},
+  author={Pan, Junting and McGuinness, Kevin and Sayrol, Elisa and O'Connor, Noel and Giro-i-Nieto, Xavier},
+  journal={arXiv preprint arXiv:1603.00845},
+  year={2016}
+}
+```
+
+You may also want to refer to our publication with the more human-friendly Chicago style:
+
+````
+Junting Pan, Kevin McGuinness, Elisa Sayrol, Noel O'Connor, and Xavier Giro-i-Nieto. "Shallow and Deep Convolutional Networks for Saliency Prediction." arXiv preprint arXiv:1603.00845 (2016).
+```
 
 ## Models
 
