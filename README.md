@@ -148,6 +148,10 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [logo-spain]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/MEyC.png "Logo of Spanish government"
 [logo-ireland]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/sfi.png "Logo of Science Foundation Ireland"
 
+## Contact
+
+If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/imatge-upc/saliency-2016-cvpr/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:xavier.giro@upc.edu>.
+
 <!---
 Javascript code to enable Google Analytics
 -->
