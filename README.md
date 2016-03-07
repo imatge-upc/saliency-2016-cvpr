@@ -51,6 +51,8 @@ To the authors knowledge, these are the first end-to-end CNNs trained and tested
 
 An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available. 
 
+![Image of the paper](https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/paper.jpg)
+
 Please cite with the following Bibtex code:
 
 ````
