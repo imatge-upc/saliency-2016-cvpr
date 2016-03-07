@@ -47,6 +47,24 @@ A joint collaboration between:
 The prediction of salient areas in images has been traditionally addressed with hand-crafted features based on neuroscience principles. This paper, however, addresses the problem with a completely data-driven approach by training a convolutional neural network (convnet). The learning process is formulated as a minimization of a loss function that measures the Euclidean distance of the predicted saliency map with the provided ground truth. The recent publication of large datasets of saliency prediction has provided enough data to train end-to-end architectures that are both fast and accurate. Two designs are proposed: a shallow convnet trained from scratch, and a another deeper solution whose first three layers are adapted from another network trained for classification.
 To the authors knowledge, these are the first end-to-end CNNs trained and tested for the purpose of saliency prediction
 
+## Publication
+
+An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available. 
+
+Please cite with the following Bibtex code:
+
+````
+@article{pan2016shallow,
+  title={Shallow and Deep Convolutional Networks for Saliency Prediction},
+  author={Pan, Junting and McGuinness, Kevin and Sayrol, Elisa and O'Connor, Noel and Giro-i-Nieto, Xavier},
+  journal={arXiv preprint arXiv:1603.00845},
+  year={2016}
+}
+```
+
+You may also want to refer to our publication with the more human-friendly Chicago style:
+
+*Junting Pan, Kevin McGuinness, Elisa Sayrol, Noel O'Connor, and Xavier Giro-i-Nieto. "Shallow and Deep Convolutional Networks for Saliency Prediction." arXiv preprint arXiv:1603.00845 (2016).*
 
 ## Models
 
@@ -66,6 +84,10 @@ The two convnets presented in our work can be downloaded from the links provided
 
 
 Our previous winning shallow models for the [LSUN Saliency Prediction Challenge 2015](http://lsun.cs.princeton.edu/#saliency) are described in [this preprint](https://imatge.upc.edu/web/publications/end-end-convolutional-network-saliency-prediction) and available from [this other site](https://imatge.upc.edu/web/resources/end-end-convolutional-networks-saliency-prediction-software). That work was also part of Junting Pan's bachelor thesis at [UPC TelecomBCN school](https://www.etsetb.upc.edu/en/) in June 2015, which report, slides and video are available [here](https://imatge.upc.edu/web/publications/visual-saliency-prediction-using-deep-learning-techniques).
+
+## Visual Results
+
+![Qualitative saliency predictions](https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/figs/qualitative.jpg)
 
 
 ## Datasets
@@ -115,7 +137,7 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
 
 |   |   |
-|:-:|:-:|
+|:--|:-:|
 |  We gratefully acknowledge the support of [NVIDIA Corporation](http://www.nvidia.com/content/global/global.php) with the donation of the GeoForce GTX [Titan Z](http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/) and [Titan X](http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x) used in this work. |  ![logo-nvidia] |
 |  The Image ProcessingGroup at the UPC is a [SGR14 Consolidated Research Group](https://imatge.upc.edu/web/projects/sgr14-image-and-video-processing-group) recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its [AGAUR](http://agaur.gencat.cat/en/inici/index.html) office. |  ![logo-catalonia] |
 |  This work has been developed in the framework of the project [BigGraph TEC2013-43935-R](https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application), funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  | ![logo-spain] | 
@@ -125,3 +147,23 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [logo-catalonia]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/generalitat.jpg "Logo of Catalan government"
 [logo-spain]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/MEyC.png "Logo of Spanish government"
 [logo-ireland]: https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/logos/sfi.png "Logo of Science Foundation Ireland"
+
+## Contact
+
+If you have any general doubt about our work or code which may be of interest for other researchers, please use the [public issues section](https://github.com/imatge-upc/saliency-2016-cvpr/issues) on this github repo. Alternatively, drop us an e-mail at <mailto:xavier.giro@upc.edu>.
+
+<!---
+Javascript code to enable Google Analytics
+-->
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7678045-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
