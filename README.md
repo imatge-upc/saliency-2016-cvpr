@@ -75,7 +75,7 @@ The two convnets presented in our work can be downloaded from the links provided
 | Shallow ConvNet (aka JuntingNet)  |  Deep ConvNet (aka SalNet) |
 |:-:|:-:|
 |  ![shallow-fig] | ![deep-fig]  |
-| [[Lasagne Model (2.5 GB)]](shallow-model)  | [[Caffe Model (99 MB)]](deep-model) [[Caffe Prototxt]](deep-prototxt)  |
+| [[Lasagne Model (2.5 GB)]](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/shallow_net.pickle)  | [[Caffe Model (99 MB)]](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_model.caffemodel) [[Caffe Prototxt]](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_deploy.prototxt)  |
 
 [shallow-fig]: ./figs/shallow.png "Shallow convnet architecture"
 [deep-fig]: ./figs/deep.png "Deep convnet architecture"
