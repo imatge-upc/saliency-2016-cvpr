@@ -59,7 +59,7 @@ Please cite with the following Bibtex code:
 @article{pan2016shallow,
   title={Shallow and Deep Convolutional Networks for Saliency Prediction},
   author={Pan, Junting and McGuinness, Kevin and Sayrol, Elisa and O'Connor, Noel and Giro-i-Nieto, Xavier},
-  journal={arXiv preprint arXiv:1603.00845},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
   year={2016}
 }
 ```
