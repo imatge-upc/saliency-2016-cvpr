@@ -66,7 +66,7 @@ Please cite with the following Bibtex code:
 
 You may also want to refer to our publication with the more human-friendly Chicago style:
 
-*Junting Pan, Kevin McGuinness, Elisa Sayrol, Noel O'Connor, and Xavier Giro-i-Nieto. "Shallow and Deep Convolutional Networks for Saliency Prediction." arXiv preprint arXiv:1603.00845 (2016).*
+*Junting Pan, Kevin McGuinness, Elisa Sayrol, Noel O'Connor, and Xavier Giro-i-Nieto. "Shallow and Deep Convolutional Networks for Saliency Prediction." In Proceedings of the IEEE International Conference on Computer Vision. 2016.*
 
 ## Models
 
