@@ -3,7 +3,7 @@
 |  ![CVPR 2016 logo][logo-cvpr] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)](http://cvpr2016.thecvf.com/)   |
 |:-:|---|
 
-[logo-cvpr]: ./logos/cvpr2016.jpg "CVPR 2016 logo"
+[logo-cvpr]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/cvpr2016.jpg "CVPR 2016 logo"
 
 | ![Junting Pan][JuntingPan-photo]  | ![Kevin McGuinness][KevinMcGuinness-photo]  | ![Elisa Sayrol][ElisaSayrol-photo]  | ![Noel O'Connor][NoelOConnor-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
@@ -16,11 +16,11 @@
 [NoelOConnor-web]: https://www.insight-centre.org/users/noel-oconnor
 [XavierGiro-web]: https://imatge.upc.edu/web/people/xavier-giro
 
-[JuntingPan-photo]: ./authors/JuntingPan.jpg "Junting Pan"
-[KevinMcGuinness-photo]: ./authors/KevinMcGuinness.jpg "Kevin McGuinness"
-[ElisaSayrol-photo]: ./authors/ElisaSayrol.jpg "Elisa Sayrol"
-[NoelOConnor-photo]: ./authors/NoelOConnor.jpg "Noel O'Connor"
-[XavierGiro-photo]: ./authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
+[JuntingPan-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JuntingPan.jpg "Junting Pan"
+[KevinMcGuinness-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/KevinMcGuinness.jpg "Kevin McGuinness"
+[ElisaSayrol-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/ElisaSayrol.jpg "Elisa Sayrol"
+[NoelOConnor-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/NoelOConnor.jpg "Noel O'Connor"
+[XavierGiro-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/XavierGiro.jpg "Xavier Giro-i-Nieto"
 
 A joint collaboration between:
 
@@ -35,11 +35,11 @@ A joint collaboration between:
 [gpi-web]: https://imatge.upc.edu/web/ 
 
 
-[logo-insight]: ./logos/insight.jpg "Insight Centre for Data Analytics"
-[logo-dcu]: ./logos/dcu.png "Dublin City University"
-[logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya"
-[logo-etsetb]: ./logos/etsetb.png "ETSETB TelecomBCN"
-[logo-gpi]: ./logos/gpi.png "UPC Image Processing Group"
+[logo-insight]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/insight.jpg "Insight Centre for Data Analytics"
+[logo-dcu]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/dcu.png "Dublin City University"
+[logo-upc]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/upc.jpg "Universitat Politecnica de Catalunya"
+[logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/etsetb.png "ETSETB TelecomBCN"
+[logo-gpi]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/gpi.png "UPC Image Processing Group"
 
 
 ## Abstract
@@ -51,7 +51,7 @@ To the authors knowledge, these are the first end-to-end CNNs trained and tested
 
 An [arXiv pre-print](http://arxiv.org/abs/1603.00845) is already available. 
 
-![Image of the paper](./figs/paper.jpg)
+![Image of the paper](https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/paper.jpg)
 
 Please cite with the following Bibtex code:
 
@@ -77,8 +77,8 @@ The two convnets presented in our work can be downloaded from the links provided
 |  ![shallow-fig] | ![deep-fig]  |
 | [[Lasagne Model (2.5 GB)]](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/shallow_net.pickle)  | [[Caffe Model (99 MB)]](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_model.caffemodel) [[Caffe Prototxt]](https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_deploy.prototxt)  |
 
-[shallow-fig]: ./figs/shallow.png "Shallow convnet architecture"
-[deep-fig]: ./figs/deep.png "Deep convnet architecture"
+[shallow-fig]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/shallow.png "Shallow convnet architecture"
+[deep-fig]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/deep.png "Deep convnet architecture"
 
 [shallow-model]: https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/shallow_net.pickle
 [deep-model]: https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_model.caffemodel
@@ -89,7 +89,7 @@ Our previous winning shallow models for the [LSUN Saliency Prediction Challenge 
 
 ## Visual Results
 
-![Qualitative saliency predictions](./figs/qualitative.jpg)
+![Qualitative saliency predictions](https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/qualitative.jpg)
 
 
 ## Datasets
@@ -132,8 +132,8 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 |:-:|:-:|
 | [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) |
 
-[AlbertGil-photo]: ./authors/AlbertGil.jpg "Albert Gil"
-[JosepPujal-photo]: ./authors/JosepPujal.jpg "Josep Pujal"
+[AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg "Albert Gil"
+[JosepPujal-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JosepPujal.jpg "Josep Pujal"
 
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
@@ -145,10 +145,10 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 |  This work has been developed in the framework of the project [BigGraph TEC2013-43935-R](https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application), funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  | ![logo-spain] | 
 |  This publication has emanated from research conducted with the financial support of Science Foundation Ireland (SFI) under grant number SFI/12/RC/2289. |  ![logo-ireland] |
 
-[logo-nvidia]: ./logos/nvidia.jpg "Logo of NVidia"
-[logo-catalonia]: ./logos/generalitat.jpg "Logo of Catalan government"
-[logo-spain]: ./logos/MEyC.png "Logo of Spanish government"
-[logo-ireland]: ./logos/sfi.png "Logo of Science Foundation Ireland"
+[logo-nvidia]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/nvidia.jpg "Logo of NVidia"
+[logo-catalonia]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/generalitat.jpg "Logo of Catalan government"
+[logo-spain]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/MEyC.png "Logo of Spanish government"
+[logo-ireland]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/sfi.png "Logo of Science Foundation Ireland"
 
 ## Contact
 
