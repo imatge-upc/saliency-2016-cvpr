@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shallow and Deep Convolutional Networks for Saliency Prediction by imatge-upc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Shallow and Deep Convolutional Networks for Saliency Prediction</h1>
+      <h2 class="project-tagline">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</h2>
+      <a href="https://github.com/imatge-upc/saliency-2016-cvpr" class="btn">View on GitHub</a>
+      <a href="https://github.com/imatge-upc/saliency-2016-cvpr/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/imatge-upc/saliency-2016-cvpr/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="shallow-and-deep-convolutional-networks-for-saliency-prediction" class="anchor" href="#shallow-and-deep-convolutional-networks-for-saliency-prediction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Shallow and Deep Convolutional Networks for Saliency Prediction</h1>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/cvpr2016.jpg" alt="CVPR 2016 logo" title="CVPR 2016 logo"></th>
+<th>Paper accepted at <a href="http://cvpr2016.thecvf.com/">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</a>
+</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JuntingPan.jpg" alt="Junting Pan" title="Junting Pan"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/KevinMcGuinness.jpg" alt="Kevin McGuinness" title="Kevin McGuinness"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/ElisaSayrol.jpg" alt="Elisa Sayrol" title="Elisa Sayrol"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/NoelOConnor.jpg" alt="Noel O'Connor" title="Noel O'Connor"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/XavierGiro.jpg" alt="Xavier Giro-i-Nieto" title="Xavier Giro-i-Nieto"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Junting Pan (*)</td>
+<td align="center">
+<a href="https://www.insight-centre.org/users/kevin-mcguinness">Kevin McGuinness</a> (*)</td>
+<td align="center"><a href="https://imatge.upc.edu/web/people/elisa-sayrol">Elisa Sayrol</a></td>
+<td align="center"><a href="https://www.insight-centre.org/users/noel-oconnor">Noel O'Connor</a></td>
+<td align="center"><a href="https://imatge.upc.edu/web/people/xavier-giro">Xavier Giro-i-Nieto</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>(*) Equal contribution</p>
+
+<p>A joint collaboration between:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/insight.jpg" alt="logo-insight" title="Insight Centre for Data Analytics"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/dcu.png" alt="logo-dcu" title="Dublin City University"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/upc.jpg" alt="logo-upc" title="Universitat Politecnica de Catalunya"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/etsetb.png" alt="logo-etsetb" title="ETSETB TelecomBCN"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/gpi.png" alt="logo-gpi" title="UPC Image Processing Group"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://www.insight-centre.org/">Insight Centre for Data Analytics</a></td>
+<td align="center"><a href="http://www.dcu.ie/">Dublin City University (DCU)</a></td>
+<td align="center"><a href="http://www.upc.edu/?set_language=en">Universitat Politecnica de Catalunya (UPC)</a></td>
+<td align="center"><a href="https://www.etsetb.upc.edu/en/">UPC ETSETB TelecomBCN</a></td>
+<td align="center"><a href="https://imatge.upc.edu/web/">UPC Image Processing Group</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Abstract</h2>
+
+<p>The prediction of salient areas in images has been traditionally addressed with hand-crafted features based on neuroscience principles. This paper, however, addresses the problem with a completely data-driven approach by training a convolutional neural network (convnet). The learning process is formulated as a minimization of a loss function that measures the Euclidean distance of the predicted saliency map with the provided ground truth. The recent publication of large datasets of saliency prediction has provided enough data to train end-to-end architectures that are both fast and accurate. Two designs are proposed: a shallow convnet trained from scratch, and a another deeper solution whose first three layers are adapted from another network trained for classification.
+To the authors knowledge, these are the first end-to-end CNNs trained and tested for the purpose of saliency prediction</p>
+
+<h2>
+<a id="publication" class="anchor" href="#publication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publication</h2>
+
+<p>An <a href="http://arxiv.org/abs/1603.00845">arXiv pre-print</a> is already available. </p>
+
+<p><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/paper.jpg" alt="Image of the paper"></p>
+
+<p>Please cite with the following Bibtex code:</p>
+
+<pre><code>@article{pan2016shallow,
+  title={Shallow and Deep Convolutional Networks for Saliency Prediction},
+  author={Pan, Junting and McGuinness, Kevin and Sayrol, Elisa and O'Connor, Noel and Giro-i-Nieto, Xavier},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+  year={2016}
+}
+</code></pre>
+
+<p>You may also want to refer to our publication with the more human-friendly Chicago style:</p>
+
+<p><em>Junting Pan, Kevin McGuinness, Elisa Sayrol, Noel O'Connor, and Xavier Giro-i-Nieto. "Shallow and Deep Convolutional Networks for Saliency Prediction." In Proceedings of the IEEE International Conference on Computer Vision. 2016.</em></p>
+
+<h2>
+<a id="models" class="anchor" href="#models" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Models</h2>
+
+<p>The two convnets presented in our work can be downloaded from the links provided below each respective figure:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Shallow ConvNet (aka JuntingNet)</th>
+<th align="center">Deep ConvNet (aka SalNet)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/shallow.png" alt="shallow-fig" title="Shallow convnet architecture"></td>
+<td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/deep.png" alt="deep-fig" title="Deep convnet architecture"></td>
+</tr>
+<tr>
+<td align="center"><a href="https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/shallow_net.pickle">[Lasagne Model (2.5 GB)]</a></td>
+<td align="center">
+<a href="https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_model.caffemodel">[Caffe Model (99 MB)]</a> <a href="https://imatge.upc.edu/web/sites/default/files/resources/1720/saliency/2016-cvpr/deep_net_deploy.prototxt">[Caffe Prototxt]</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Our previous winning shallow models for the <a href="http://lsun.cs.princeton.edu/#saliency">LSUN Saliency Prediction Challenge 2015</a> are described in <a href="https://imatge.upc.edu/web/publications/end-end-convolutional-network-saliency-prediction">this preprint</a> and available from <a href="https://imatge.upc.edu/web/resources/end-end-convolutional-networks-saliency-prediction-software">this other site</a>. That work was also part of Junting Pan's bachelor thesis at <a href="https://www.etsetb.upc.edu/en/">UPC TelecomBCN school</a> in June 2015, which report, slides and video are available <a href="https://imatge.upc.edu/web/publications/visual-saliency-prediction-using-deep-learning-techniques">here</a>.</p>
+
+<h2>
+<a id="visual-results" class="anchor" href="#visual-results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Visual Results</h2>
+
+<p><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/figs/qualitative.jpg" alt="Qualitative saliency predictions"></p>
+
+<h2>
+<a id="datasets" class="anchor" href="#datasets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Datasets</h2>
+
+<h3>
+<a id="training" class="anchor" href="#training" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Training</h3>
+
+<p>As explained in our paper, our networks were trained on the training and validation data provided by <a href="http://salicon.net/">SALICON</a>.</p>
+
+<h3>
+<a id="test" class="anchor" href="#test" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Test</h3>
+
+<p>Three different dataset were used for test:</p>
+
+<ul>
+<li>Test partition of <a href="http://salicon.net/">SALICON</a> dataset.</li>
+<li>Test partition of <a href="http://vision.princeton.edu/projects/2014/iSUN/">iSUN</a> dataset.</li>
+<li>
+<a href="http://saliency.mit.edu/datasets.html">MIT300</a>.</li>
+</ul>
+
+<p>A collection of links to the SALICON and iSUN datasets is available from the <a href="http://lsun.cs.princeton.edu/#saliency">LSUN Challenge site</a>.</p>
+
+<h2>
+<a id="software-frameworks" class="anchor" href="#software-frameworks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Software frameworks</h2>
+
+<p>Our paper presents two different convolutional neural networks trained with different frameworks. For this reason, different instructions and source code folders are provided.</p>
+
+<h3>
+<a id="shallow-network-on-lasagne" class="anchor" href="#shallow-network-on-lasagne" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Shallow Network on Lasagne</h3>
+
+<p>The shallow network is implemented in <a href="https://github.com/Lasagne/Lasagne">Lasagne</a>, which at its time is developed over <a href="http://deeplearning.net/software/theano/">Theano</a>.
+To install required version of Lasagne and all the remaining dependencies, you should run this <a href="https://pip.pypa.io/en/stable/">pip</a> command.</p>
+
+<pre><code>pip install -r https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/shallow/requirements.txt
+</code></pre>
+
+<p>This requirements file was provided by <a href="http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/">Daniel Nouri</a>.</p>
+
+<h3>
+<a id="deep-network-on-caffe" class="anchor" href="#deep-network-on-caffe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deep Network on Caffe</h3>
+
+<p>The deep network was developed over <a href="http://caffe.berkeleyvision.org/">Caffe</a> by <a href="http://bvlc.eecs.berkeley.edu/">Berkeley Vision and Learning Center (BVLC)</a>. You will need to follow <a href="http://caffe.berkeleyvision.org/installation.html">these instructions</a> to install Caffe.</p>
+
+<h2>
+<a id="acknowledgements" class="anchor" href="#acknowledgements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgements</h2>
+
+<p>We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg" alt="AlbertGil-photo" title="Albert Gil"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JosepPujal.jpg" alt="JosepPujal-photo" title="Josep Pujal"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="AlbertGil-web">Albert Gil</a></td>
+<td align="center"><a href="JosepPujal-web">Josep Pujal</a></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">We gratefully acknowledge the support of <a href="http://www.nvidia.com/content/global/global.php">NVIDIA Corporation</a> with the donation of the GeoForce GTX <a href="http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/">Titan Z</a> and <a href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x">Titan X</a> used in this work.</td>
+<td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/nvidia.jpg" alt="logo-nvidia" title="Logo of NVidia"></td>
+</tr>
+<tr>
+<td align="left">The Image ProcessingGroup at the UPC is a <a href="https://imatge.upc.edu/web/projects/sgr14-image-and-video-processing-group">SGR14 Consolidated Research Group</a> recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its <a href="http://agaur.gencat.cat/en/inici/index.html">AGAUR</a> office.</td>
+<td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/generalitat.jpg" alt="logo-catalonia" title="Logo of Catalan government"></td>
+</tr>
+<tr>
+<td align="left">This work has been developed in the framework of the project <a href="https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application">BigGraph TEC2013-43935-R</a>, funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).</td>
+<td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/MEyC.png" alt="logo-spain" title="Logo of Spanish government"></td>
+</tr>
+<tr>
+<td align="left">This publication has emanated from research conducted with the financial support of Science Foundation Ireland (SFI) under grant number SFI/12/RC/2289.</td>
+<td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/sfi.png" alt="logo-ireland" title="Logo of Science Foundation Ireland"></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>If you have any general doubt about our work or code which may be of interest for other researchers, please use the <a href="https://github.com/imatge-upc/saliency-2016-cvpr/issues">public issues section</a> on this github repo. Alternatively, drop us an e-mail at <a href="mailto:xavier.giro@upc.edu">xavier.giro@upc.edu</a>.</p>
+
+
+
+
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/imatge-upc/saliency-2016-cvpr">Shallow and Deep Convolutional Networks for Saliency Prediction</a> is maintained by <a href="https://github.com/imatge-upc">imatge-upc</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
