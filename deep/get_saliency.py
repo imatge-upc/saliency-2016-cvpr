@@ -59,10 +59,10 @@ class AdjustVariable(object):
         getattr(nn, self.name).set_value(new_value)
 
 def to_rgb(im):
-    im.resize((96, 96, 1), refcheck=False)
+    im.resize((im.shape[0], im.shape[1], 1), refcheck=False)
     return np.repeat(im.astype(np.float32), 3, 2)
 
-def get_saliency_for_shallownet(image_url,sal_url)):
+def get_saliency_for_shallownet(image_url,sal_url):
     arr_files = glob.glob(image_url+"*.jpg")
     for i in range(len(arr_files)):  
         url_image = arr_files[i]
@@ -93,12 +93,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
