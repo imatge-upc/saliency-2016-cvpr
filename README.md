@@ -63,7 +63,7 @@ booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVP
 month = {June},
 year = {2016}
 }
-```
+````
 
 You may also want to refer to our publication with the more human-friendly Chicago style:
 
