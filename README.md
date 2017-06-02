@@ -125,6 +125,10 @@ This requirements file was provided by [Daniel Nouri](http://danielnouri.org/not
 
 The deep network was developed over [Caffe](http://caffe.berkeleyvision.org/) by [Berkeley Vision and Learning Center (BVLC)](http://bvlc.eecs.berkeley.edu/). You will need to follow [these instructions](http://caffe.berkeleyvision.org/installation.html) to install Caffe.
 
+## Posterior work
+
+If you were interested in this work, you may want to also check our posterior work, [SalGAN](https://imatge-upc.github.io/saliency-salgan-2017/), which offers a better performance.
+
 ## Acknowledgements
 
 We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
