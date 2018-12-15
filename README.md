@@ -7,10 +7,9 @@
 
 | ![Junting Pan][JuntingPan-photo]  | ![Kevin McGuinness][KevinMcGuinness-photo]  | ![Elisa Sayrol][ElisaSayrol-photo]  | ![Noel O'Connor][NoelOConnor-photo]  | ![Xavier Giro-i-Nieto][XavierGiro-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
-| [Junting Pan][JuntingPan-web] (*)  | [Kevin McGuinness][KevinMcGuinness-web] (*)   |  [Elisa Sayrol][ElisaSayrol-web] | [Noel O'Connor][NoelOConnor-web]   | [Xavier Giro-i-Nieto][XavierGiro-web]   |
+| Junting Pan (*)  | [Kevin McGuinness][KevinMcGuinness-web] (*)   |  [Elisa Sayrol][ElisaSayrol-web] | [Noel O'Connor][NoelOConnor-web]   | [Xavier Giro-i-Nieto][XavierGiro-web]   |
 
 (*) Equal contribution
-[JuntingPan-web]: https://junting.github.io/
 [KevinMcGuinness-web]: https://www.insight-centre.org/users/kevin-mcguinness
 [ElisaSayrol-web]: https://imatge.upc.edu/web/people/elisa-sayrol
 [NoelOConnor-web]: https://www.insight-centre.org/users/noel-oconnor
