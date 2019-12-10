@@ -117,7 +117,7 @@ The shallow network is implemented in [Lasagne](https://github.com/Lasagne/Lasag
 To install required version of Lasagne and all the remaining dependencies, you should run this [pip](https://pip.pypa.io/en/stable/) command.
 
 ```
-pip install -r https://github.com/imatge-upc/saliency-2016-cvpr/blob/master/shallow/requirements.txt
+pip install -r https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/shallow/requirements.txt
 ```
 
 This requirements file was provided by [Daniel Nouri](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/).
